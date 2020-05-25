@@ -1,0 +1,313 @@
+********** 01/05/2020 10:27:52 **********
+Exception Type: System.Web.HttpException
+Exception: Un error HTTP ha ocurrido.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 01/05/2020 10:33:22 **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: An InvalidOperationException Ha ocurrido en Page_Load sobre la página Default.aspx.
+Inner Source: JuguetesJuguealo
+Inner Stack Trace: 
+   en JuguetesJuguealo._Default.Page_Load(Object sender, EventArgs e) en C:\Users\upractica5\source\repos\JuguetesJuguealo\JuguetesJuguealo\Default.aspx.cs:línea 14
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Se produjo una excepción de tipo 'System.Web.HttpUnhandledException'.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   en System.Web.UI.Page.HandleError(Exception e)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   en System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   en System.Web.UI.Page.ProcessRequest()
+   en System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   en System.Web.UI.Page.ProcessRequest(HttpContext context)
+   en ASP.default_aspx.ProcessRequest(HttpContext context)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 01/05/2020 10:33:22 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: Error Page
+Stack Trace: 
+********** 01/05/2020 10:35:03 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: Error Page
+Stack Trace: 
+********** 01/05/2020 10:46:53 **********
+Exception Type: System.Web.HttpException
+Exception: Un error HTTP ha ocurrido.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 04/05/2020 12:06:35 **********
+Exception Type: System.InvalidOperationException
+Exception: No se encuentra ningún método público con el nombre 'GetProducto' en la página o hay varios métodos con el mismo nombre del tipo 'ASP.default_aspx'.
+Source: Page_Error - Default.aspx
+Stack Trace: 
+   en System.Web.UI.WebControls.ModelDataSourceView.FindMethod(String methodName)
+   en System.Web.UI.WebControls.ModelDataSourceView.EvaluateSelectParameters()
+   en System.Web.UI.WebControls.ModelDataSourceView.OnPageLoadComplete(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Page.OnLoadComplete(EventArgs e)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 04/05/2020 12:08:31 **********
+Exception Type: System.InvalidOperationException
+Exception: No se encuentra ningún método público con el nombre 'GetProducto' en la página o hay varios métodos con el mismo nombre del tipo 'ASP.default_aspx'.
+Source: Page_Error - Default.aspx
+Stack Trace: 
+   en System.Web.UI.WebControls.ModelDataSourceView.FindMethod(String methodName)
+   en System.Web.UI.WebControls.ModelDataSourceView.EvaluateSelectParameters()
+   en System.Web.UI.WebControls.ModelDataSourceView.OnPageLoadComplete(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Page.OnLoadComplete(EventArgs e)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 04/05/2020 12:08:40 **********
+Exception Type: System.InvalidOperationException
+Exception: No se encuentra ningún método público con el nombre 'GetProducto' en la página o hay varios métodos con el mismo nombre del tipo 'ASP.default_aspx'.
+Source: Page_Error - Default.aspx
+Stack Trace: 
+   en System.Web.UI.WebControls.ModelDataSourceView.FindMethod(String methodName)
+   en System.Web.UI.WebControls.ModelDataSourceView.EvaluateSelectParameters()
+   en System.Web.UI.WebControls.ModelDataSourceView.OnPageLoadComplete(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Page.OnLoadComplete(EventArgs e)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+********** 05/05/2020 20:18:51 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 05/05/2020 20:19:34 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 05/05/2020 20:21:16 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 06/05/2020 9:57:33 **********
+Inner Exception Type: System.NullReferenceException
+Inner Exception: Referencia a objeto no establecida como instancia de un objeto.
+Inner Source: JuguetesJuguealo
+Inner Stack Trace: 
+   en JuguetesJuguealo.SiteMaster.Page_PreRender(Object sender, EventArgs e) en C:\Users\upractica5\source\repos\JuguetesJuguealo\JuguetesJuguealo\Site.Master.cs:línea 87
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnPreRender(EventArgs e)
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Se produjo una excepción de tipo 'System.Web.HttpUnhandledException'.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   en System.Web.UI.Page.HandleError(Exception e)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   en System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   en System.Web.UI.Page.ProcessRequest()
+   en System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   en System.Web.UI.Page.ProcessRequest(HttpContext context)
+   en ASP.default_aspx.ProcessRequest(HttpContext context)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 06/05/2020 12:35:02 **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: Se debe especificar el marcador de posición de un elemento en el elemento ListView 'listaProducto'. Para ello, establezca la propiedad ID de un control en "itemPlaceholder". El control del marcador de posición del elemento debe especificar también runat="server".
+Inner Source: System.Web.Extensions
+Inner Stack Trace: 
+   en System.Web.UI.WebControls.ListView.GetPreparedContainerInfo(Control outerContainer, Boolean isItem, Int32& placeholderIndex)
+   en System.Web.UI.WebControls.ListView.CreateItemsInGroups(ListViewPagedDataSource dataSource, Boolean dataBinding, InsertItemPosition insertPosition, ArrayList keyArray)
+   en System.Web.UI.WebControls.ListView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   en System.Web.UI.WebControls.ListView.PerformDataBinding(IEnumerable data)
+   en System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   en System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.ModelDataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   en System.Web.UI.WebControls.ListView.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   en System.Web.UI.WebControls.ListView.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Se produjo una excepción de tipo 'System.Web.HttpUnhandledException'.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   en System.Web.UI.Page.HandleError(Exception e)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   en System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   en System.Web.UI.Page.ProcessRequest()
+   en System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   en System.Web.UI.Page.ProcessRequest(HttpContext context)
+   en ASP.listaproducto_aspx.ProcessRequest(HttpContext context)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 06/05/2020 19:17:25 **********
+Inner Exception Type: System.InvalidOperationException
+Inner Exception: El método Select debe devolver "IQueryable<JuguetesJuguealo.Models.Producto>", "IEnumerable<JuguetesJuguealo.Models.Producto>" o "'JuguetesJuguealo.Models.Producto'" cuando ItemType está establecido en "JuguetesJuguealo.Models.Producto".
+Inner Source: System.Web
+Inner Stack Trace: 
+   en System.Web.UI.WebControls.ModelDataSourceView.CreateSelectResult(Object result, Boolean isAsyncSelect)
+   en System.Web.UI.WebControls.ModelDataSourceView.CreateSelectResult(Object result)
+   en System.Web.UI.WebControls.ModelDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   en System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.ModelDataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   en System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   en System.Web.UI.WebControls.ListView.PerformSelect()
+   en System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   en System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   en System.Web.UI.WebControls.ListView.CreateChildControls()
+   en System.Web.UI.Control.EnsureChildControls()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Control.PreRenderRecursiveInternal()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Exception Type: System.Web.HttpUnhandledException
+Exception: Se produjo una excepción de tipo 'System.Web.HttpUnhandledException'.
+Source: Application_Error - Global.asax
+Stack Trace: 
+   en System.Web.UI.Page.HandleError(Exception e)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   en System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   en System.Web.UI.Page.ProcessRequest()
+   en System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   en System.Web.UI.Page.ProcessRequest(HttpContext context)
+   en ASP.aviones_aspx.ProcessRequest(HttpContext context)
+   en System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   en System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   en System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+********** 06/05/2020 19:29:15 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 07/05/2020 6:05:28 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 07/05/2020 6:06:41 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 07/05/2020 6:34:44 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 07/05/2020 6:36:00 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 07/05/2020 9:49:48 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 07/05/2020 10:10:05 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 07/05/2020 12:57:21 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 07/05/2020 12:57:27 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 07/05/2020 12:58:35 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 07/05/2020 18:03:22 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 08/05/2020 12:03:52 **********
+Exception Type: System.Web.HttpException
+Exception: Un error HTTP ha ocurrido.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 08/05/2020 12:05:30 **********
+Exception Type: System.Web.HttpException
+Exception: Un error HTTP ha ocurrido.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 08/05/2020 12:08:48 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 08/05/2020 12:09:54 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 11/05/2020 13:08:27 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 23/05/2020 20:22:57 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 24/05/2020 12:40:20 **********
+Exception Type: System.Web.HttpException
+Exception: Un error HTTP ha ocurrido.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 24/05/2020 12:40:36 **********
+Exception Type: System.Web.HttpException
+Exception: Un error HTTP ha ocurrido.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 24/05/2020 12:40:43 **********
+Exception Type: System.Web.HttpException
+Exception: Un error HTTP ha ocurrido.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 24/05/2020 12:41:44 **********
+Exception Type: System.Web.HttpException
+Exception: Un error HTTP ha ocurrido.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 24/05/2020 12:44:19 **********
+Exception Type: System.Web.HttpException
+Exception: Un error HTTP ha ocurrido.
+Source: customErrors section - Web.config
+Stack Trace: 
+********** 24/05/2020 20:26:24 **********
+Exception Type: System.Exception
+Exception: El error ha sido manejado por un error de código.
+Source: customErrors section - Web.config
+Stack Trace: 

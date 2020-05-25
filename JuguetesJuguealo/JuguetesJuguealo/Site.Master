@@ -1,0 +1,400 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="JuguetesJuguealo.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Juguetes Juguéalo</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/Site.css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200,300,500,400,600,700,800' rel='stylesheet' type='text/css'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" type="text/css" href="Content/olonkar/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" type="text/css" href="Content/olonkar/css/font-awesome.min.css" />
+    
+    <link rel="stylesheet" type="text/css" href="Content/olonkar/css/owl.carousel.min.css" />
+    
+    <link rel="stylesheet" type="text/css" href="Content/olonkar/css/animate.min.css" />
+   
+    <link rel="stylesheet" type="text/css" href="Content/olonkar/css/jquery.simpleLens.css" />
+    
+    <link rel="stylesheet" type="text/css" href="Content/olonkar/css/jquery-price-slider.css" />
+    
+    <link rel="stylesheet" type="text/css" href="Content/olonkar/css/meanmenu.min.css" />
+    
+    <link rel="stylesheet" type="text/css" href="Content/olonkar/css/magnific-popup.css" />
+    
+    <link rel="stylesheet" type="text/css" href="Content/olonkar/css/nivo-slider.css" />
+    
+    <link rel="stylesheet" type="text/css" href="Content/olonkar/style.css" />
+    
+    <link rel="stylesheet" type="text/css" href="Content/olonkar/css/responsive.css" />
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body>
+  <form runat="server">
+ <div class="header-top"><!--Cabecera redes sociales-->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-4">
+				<div class="info">
+					<div class="phn-num float-left">
+						<i class="fa fa-phone float-left"></i>
+						<p>(91)  123  456  789 </p>
+					</div>
+					<div class="mail-id float-left">
+						<i class="fa fa-envelope-o float-left"></i>
+						<p><a href="#">juguetesJuguealo.com</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<div class="socials text-center">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/sergio-serrano-guti%C3%A9rrez-0492b7183/"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<div id="top-menu" class="float-right">
+					<ul>
+						<li><a href="Account/Login">Mi Cuenta</a></li>
+						<li><a href="#">€EUR <i class="fa fa-angle-down"></i></a>
+							<ul>
+								<li><a href="#">$USD</a></li>
+								<li><a href="#">POUND</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Español(Es) <i class="fa fa-angle-down"></i></a>
+							<ul>
+								<li><a href="#">English(USA)</a></li>
+								<li><a href="#">English(UK)</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!--Final Cabecera redes sociales-->
+
+<div class="header-area"><!--Area de Registro-->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-lg-3">
+				<div class="log-link">
+					 <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <p>Bienvenido, puedes....</p>
+					<h5><a runat="server" href="Account/Login">Iniciar Sesión</a> o <a runat="server" href="Account/Register">Regístrate</a></h5>
+                                    </AnonymousTemplate>
+                             
+                            <LoggedInTemplate>
+                              
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="Account/Manage" title="Manage your account">Hola, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                <li>
+                                    
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                  
+                                </li>
+                            </ul>
+                               
+                        </LoggedInTemplate>
+                             
+                    </asp:LoginView>
+				</div>
+			</div>
+			<div class="col-sm-4 col-lg-6">
+			
+			</div>
+			<div class="col-sm-4 col-lg-3">
+				<div class="cart-info float-right">
+					<a runat="server" href="CarritoCompra.aspx" ID="cartCount">
+						
+						<i class="fa fa-shopping-cart"></i>
+					</a>
+				</div>
+				<div class="search float-right">
+					<input type="text" value="" placeholder="Búsqueda" />
+					<button class="submit"><i class="fa fa-search"></i></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!--Fin Area de registro-->
+
+<div class="menu-area"><!--Area Menu Productos-->
+	<div class="container">
+		<div class="row">
+			<div class="clo-md-4">
+				<div class="main-menu hidden-sm hidden-xs">
+					<nav>
+						<ul>
+                             <li><a runat="server" id="adminLink" visible="false" 
+                             href="Admin/PaginaAdministracion">Administrar</a></li>
+							<li><a runat="server" href="ListaProducto" class="active">Productos</a>
+								<ul class="sub-menu">
+                                    <li><a runat="server" href="Coches">Coches</a></li>
+									<li><a runat="server" href="Cohetes">Cohetes</a></li>
+									<li><a runat="server" href="Barcos">Barcos</a></li>
+									<li><a runat="server" href="Camiones">Camiones</a></li>
+									<li><a runat="server" href="Aviones">Aviones</a></li>
+								</ul>
+							</li>
+							<li><a runat="server" href="Default" class="active">Inicio</a>
+								<div class="sub-menu">
+									
+										<ul>
+											<li><a href="Default">Página de Inicio</a></li>								
+										</ul>
+								</div>
+							</li>
+
+							<li><a runat="server" href="About">Sobre Nosotros</a></li>
+							<li><a runat="server" href="Contact">Contacto</a>
+								<ul class="sub-menu">
+									<li><a runat="server" href="Contact">Contacto 1</a></li>
+									<li><a runat="server" href="Contact">Contacto 2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="mobile-menu hidden-md hidden-lg">
+					<nav>
+						<ul>
+							<li><a runat="server" href="~/ListaProducto" class="active">Productos</a>
+								<ul class="sub-menu">
+                                    <li><a href="Coches">Coches</a></li>
+											<li><a runat="server" href="Cohetes">Cohetes</a></li>
+											<li><a runat="server" href="Barcos">Barcos</a></li>
+											<li><a runat="server" href="Camiones">Camiones</a></li>
+											<li><a runat="server" href="Aviones">Aviones</a></li>
+								</ul>
+							</li>
+								<li><a runat="server" href="Default" class="active">Inicio</a>
+								<div class="sub-menu">
+									
+										<ul>
+											<li><a runat="server" href="Default">Página de Inicio</a></li>								
+										</ul>
+								</div>
+							</li>
+
+                            <li><a runat="server" href="~/About">Sobre Nosotros</a></li>
+							<li><a runat="server" href="~/Contact">Contacto</a>
+								<ul class="sub-menu">
+									<li><a href="Contact">Contacto 1</a></li>
+									<li><a href="Contact">Contacto 2</a></li>
+								</ul>
+							</li>
+							
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!--Final Area Menu de Productos-->
+
+    <div>
+           <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+    </div>
+ <footer>
+
+<div class="support-area section fix"><!--Empieza Area Soporte-->
+	<div class="container">
+		<div class="row">
+			<div class="support col-sm-3">
+				<i class="fa fa-thumbs-up"></i>
+				<h3>Alta Calidad</h3>
+				<p>Máxima calidad de nuestros productos</p>
+			</div>
+			<div class="support col-sm-3">
+				<i class="fa fa-bus"></i>
+				<h3>Envio Rápido</h3>
+				<p>Envio express a domicilio o tu oficina</p>
+			</div>
+			<div class="support col-sm-3">
+				<i class="fa fa-phone"></i>
+				<h3>Soporte 24/7</h3>
+				<p>Tenemos soporte 24 horas para cualquier consulta</p>
+			</div>
+			<div class="support col-sm-3">
+				<i class="fa fa-random"></i>
+				<h3>Devoluciones 14 Días</h3>
+				<p>Aceptamos la devolución de todos los productos en un plazo máximo de 14 días</p>
+			</div>
+		</div>
+	</div>
+</div><!--Fin Area soporte-->
+
+<div class="footer-top-area fix">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<div class="footer-about">
+					<div class="image">
+						
+						<h3>Tienda de Juguetes On-Line</h3>
+					</div>
+					<p>perspiciatis unde omnis iste natus error sit voluptatem accm doloremque antium, totam rem aperiam, eaque ipsa perspiciatis unde omnis iste</p>
+				</div>
+				<div class="footer-contact">
+					<div class="single-contact">
+						<div class="icon">
+							<i class="fa fa-map-marker"></i>
+						</div>
+						<div class="details">
+							<p>Gran Via, 13</p>
+							<p>01234 Madrid</p>
+						</div>
+					</div>
+					<div class="single-contact">
+						<div class="icon">
+							<i class="fa fa-phone"></i>
+						</div>
+						<div class="details">
+							<p>+91  123  456  789</p>
+							<p>+91 123  456  789</p>
+						</div>
+					</div>
+					<div class="single-contact">
+						<div class="icon">
+							<i class="fa fa-dribbble"></i>
+						</div>
+						<div class="details">
+							<a href="#">info@juguetesjuguealo.com</a>
+							<a href="#">www.juguetesjuguealo.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="footer-quick-link footer-links">
+					<h2>BÚSQUEDA RÁPIDA</h2>
+					<ul>
+						<li><a href="Default.aspx">Inicio</a></li>
+						<li><a href="Default.aspx">Tienda</a></li>
+						<li><a href="#">Nuevos Productos</a></li>
+						<li><a href="#">Servicios</a></li>	
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Shortcodes</a></li>
+						<li><a href="Contact.aspx">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<div class="row">
+					<div class="col-sm-8 footer-support footer-links">
+						<h2>SOPORTE</h2>
+						<ul>
+							<li><a href="#">Mapa</a></li>
+							<li><a href="#">Política de Privacidad</a></li>
+							<li><a href="#">Tu Cuenta</a></li>
+							<li><a href="#">Términos y Condiciones</a></li>
+							<li><a href="#">Búsqueda Avanzada</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">Cupón de Regalo</a></li>
+							<li><a href="Contact.aspx">Contáctanos</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4 footer-account footer-links">
+						<h2>CUENTA</h2>
+						<ul>
+							<li><a href="#">Mi Cuenta</a></li>
+							<li><a href="#">Histórico de Pedidos</a></li>
+							<li><a href="#">Devoluciones</a></li>
+							<li><a href="#">Ofertas Especiales</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-newslater fix">
+					<div class="wrap fix">
+						<h3>NEWS LETTER ! </h3>
+						
+							<input type="email" placeholder="Your E-mail...">
+							
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer-area fix">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+			
+			</div>
+			<div class="col-sm-6">
+				<div class="payment">
+					<ul>
+						<li><a href="#"><img src="Content/olonkar/img/footer/paypal.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="Content/olonkar/img/footer/visa.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="Content/olonkar/img/footer/master.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="Content/olonkar/img/footer/cards.jpg" alt="" /></a></li>
+						<li><a href="#"><img src="Content/olonkar/img/footer/discover.jpg" alt="" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+</form>
+
+<script type="text/javascript" src="Content/olonkar/js/jquery-2.1.4.min.js"></script>
+
+<script type="text/javascript" src="Content/olonkar/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="Content/olonkar/js/owl.carousel.min.js"></script>
+
+<script type="text/javascript" src="Content/olonkar/js/jquery.countTo.js"></script>
+
+<script type="text/javascript" src="Content/olonkar/js/jquery.mixitup.min.js"></script>
+
+<script type="text/javascript" src="Content/olonkar/js/jquery.magnific-popup.min.js"></script>
+
+<script type="text/javascript" src="Content/olonkar/js/jquery.appear.js"></script>
+
+<script type="text/javascript" src="Content/olonkar/js/jquery.meanmenu.min.js"></script>
+
+<script type="text/javascript" src="Content/olonkar/js/jquery.nivo.slider.pack.js"></script>
+
+<script type="text/javascript" src="Content/olonkar/js/jquery.scrollup.min.js"></script>
+
+<script type="text/javascript" src="Content/olonkar/js/jquery.simpleLens.min.js"></script>
+
+<script type="text/javascript" src="Content/olonkar/js/jquery-price-slider.js"></script>
+
+<script type="text/javascript" src="Content/olonkar/js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>	
+
+<script type="text/javascript" src="Content/olonkar/js/main.js"></script>
+</body>
+</html>
